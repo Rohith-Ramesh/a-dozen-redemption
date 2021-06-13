@@ -86,6 +86,13 @@ h2 {
   background: black;
   font-family: "Parisienne", sans-serif;
   font-size: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.bt:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+  color:#fff;
+  border: 1px solid #fff;
 }
 
 
