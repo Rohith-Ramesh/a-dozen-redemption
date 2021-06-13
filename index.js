@@ -1,6 +1,9 @@
 function main() {
   let body = document.querySelector('body')
   let btn = document.getElementById('proceed-btn')
+  btn.addEventListener('click', () => {
+    window.location = './level1/level1.html'
+  })
   let paperImg = document.getElementById('paper-img')
   document.querySelector('html').style.setProperty('--bg','#000');
   let content = body.innerHTML
@@ -21,10 +24,7 @@ function main() {
     body.innerHTML = content;
     document.querySelector('html').style.setProperty('--bg',`url('./images/intro1-min.png')`);
   })
-  console.log(btn)
-  btn.addEventListener('click', () => {
-    window.location = './level1/level1.html'
-  })
+  
 }
 main()
 function loadImage(img, src) {
