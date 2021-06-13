@@ -6,6 +6,9 @@
   font-family: "Caveat", sans-serif;
   box-sizing: border-box;
 }
+body{
+  overflow-y: hidden;
+}
 html{
   --anim: change 40s linear forwards;
 }
