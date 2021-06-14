@@ -9,7 +9,7 @@ function main() {
     proceedBtn.style.display = 'block';
   },40000)
   proceedBtn.addEventListener('click',()=>{
-    window.location = '/level2/level2.html'
+    window.location = '../screen2/screen2.html'
   })
   video.play()
   console.log('loaded')

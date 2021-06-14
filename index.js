@@ -20,7 +20,7 @@ function main() {
     body.innerHTML = content
     let btn = document.getElementById('proceed-btn')
     btn.addEventListener('click', () => {
-      window.location = './level1/level1.html'
+      window.location = './quest01/screen1/screen1.html'
     })
     document
       .querySelector('html')
