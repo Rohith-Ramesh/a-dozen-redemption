@@ -7,7 +7,7 @@ function main() {
   proceedBtn.style.display = 'none';
   setTimeout(()=>{
     proceedBtn.style.display = 'block';
-  },40000)
+  },56000)
   proceedBtn.addEventListener('click',()=>{
     window.location = '../screen2/screen2.html'
   })

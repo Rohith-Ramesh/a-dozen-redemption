@@ -10,7 +10,7 @@ body{
   overflow-y: hidden;
 }
 html{
-  --anim: change 40s linear forwards;
+  --anim: change 56s linear forwards;
 }
 #toggle-mute {
   z-index: 200;
@@ -20,12 +20,14 @@ html{
   border: none;
   font-size: 3rem;
 }
-#bg-video {
+.img-lake{
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
+  animation: zoom 56s ease infinite;
 }
 .overlay{
   position: absolute;
@@ -37,7 +39,7 @@ html{
 }
 #story::after {
   
-  content: "The land around cried in bloody tears,A wash of dark and morbid fears,";
+  content: "";
   position: absolute;
   font-size: 4rem;
   background:transparent;
@@ -79,42 +81,65 @@ html{
   0%{
     opacity: 0;
   }
-  10% {
+  7.14% {
     opacity: 1;
-    content: "The land around cried in bloody tears,A wash of dark and morbid fears,";
+    content: "Nothing lit a fire in that dark place,Death was there in its poisonous waves,";
     background: transparent;
   }
-  20% {
+  14.28% {
     opacity: 0;
   }
-  30% {
+  21.42% {
     opacity: 1;
-    content: "Spirit of mane from Hera thee,Not a shifting shadow will restrain me,";
+    content: "The nine shadows on the waters it cast,Plunging Lerna back into the past,";
   }
-  40% {
+  28.56% {
     opacity: 0;
   }
-  50% {
+  35.96% {
     opacity: 1;
-    content: "Consuming life like a leeching vine,Shivers shake through a thoughtless spine, ";
+    content: "Immortal was the beast of prey, For they say, Hercules felt his heart sway,";
   }
-  60% {
+  43.1% {
     opacity: 0;
   }
-  70% {
+  50.24% {
     opacity: 1;
-    content: "I shall tame this dreamless beast,End its hunger with a taste of defeat,";
+    content: "And on that day, even death couldn't forsee.Which evil would decay, which monster would walk free";
   }
-  80% {
+  57.38% {
     opacity: 0;
   }
-  90% {
+  64.52% {
     opacity: 1;
-    content: 'I Hercules, call out to thee,Roar out to me, but only your screams will set you free"';
+    content: "It was Iolaus, who aided the son of Zeus, Without him, the battle would've been obtuse  ";
+  }
+  71.92%{
+    opacity: 0;
+  }
+  79.06%{
+    opacity: 1;
+    content: "For loss of a head, two did replace,Burn it to ashes, the nephew did in haste  ";
+  }
+  86.2%{
+    opacity: 0;
+  }
+  93.34%{
+    opacity: 1;
+    content: "Hid the ninth on the path form Lerna to Elaeus,Thus came an end to the feud, with a half-human victorious.";
   }
   100% {
     opacity: 0;
     content:"";
+  }
+}
+
+@keyframes zoom{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.3);
   }
 }
 
